@@ -1,0 +1,69 @@
+import React from 'react';
+import { Twitter, Linkedin, Instagram } from 'lucide-react';
+
+const Footer = () => {
+    return (
+        <footer className="bg-forest-green text-white pt-20 pb-10 px-6 border-t border-white/5">
+            <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+
+                <div className="md:col-span-1">
+                    <div className="flex items-center gap-2 mb-6">
+                        <div className="w-6 h-6 bg-gold rotate-45 flex items-center justify-center">
+                            <div className="w-3 h-3 bg-forest-green"></div>
+                        </div>
+                        <span className="text-lg font-bold tracking-tight text-white">The Growth Circle</span>
+                    </div>
+                    <p className="text-white/60 text-xs leading-relaxed max-w-xs">
+                        Fostering intentional growth through personal connection, mentorship, and accountability for the modern professional.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 className="text-gold font-bold text-sm uppercase tracking-wider mb-6">Community</h4>
+                    <ul className="space-y-4 text-sm text-white/70">
+                        <li><a href="#" className="hover:text-gold transition-colors">Membership</a></li>
+                        <li><a href="#" className="hover:text-gold transition-colors">Events</a></li>
+                        <li><a href="#" className="hover:text-gold transition-colors">Code of Conduct</a></li>
+                        <li><a href="#" className="hover:text-gold transition-colors">Members</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 className="text-gold font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                    <ul className="space-y-4 text-sm text-white/70">
+                        <li><a href="#" className="hover:text-gold transition-colors">About Us</a></li>
+                        <li><a href="#" className="hover:text-gold transition-colors">Careers</a></li>
+                        <li><a href="#" className="hover:text-gold transition-colors">Contact</a></li>
+                        <li><a href="#" className="hover:text-gold transition-colors">Press</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 className="text-gold font-bold text-sm uppercase tracking-wider mb-6">Stay Updated</h4>
+                    <div className="flex gap-2 mb-4">
+                        <input
+                            type="email"
+                            placeholder="Email address"
+                            className="bg-forest-light border border-white/10 text-white px-4 py-2 text-sm w-full focus:outline-none focus:border-gold"
+                        />
+                        <button className="bg-gold text-forest-green px-4 py-2 font-bold hover:bg-gold-hover transition-colors">
+                            &rarr;
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div className="max-w-6xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-white/40">
+                <p>&copy; 2026 The Growth Circle. All rights reserved.</p>
+                <div className="flex gap-6 mt-4 md:mt-0">
+                    <Twitter className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                    <Linkedin className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                    <Instagram className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

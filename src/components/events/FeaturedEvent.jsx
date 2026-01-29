@@ -1,0 +1,65 @@
+import React from 'react';
+import { Calendar, MapPin, Clock, Star } from 'lucide-react';
+
+const FeaturedEvent = () => {
+    return (
+        <section className="py-20 px-6 bg-white">
+            <div className="max-w-6xl mx-auto">
+                <div className="flex justify-between items-center mb-10">
+                    <h2 className="text-3xl font-bold text-[#051910]">Next Up</h2>
+                    <span className="bg-[#fff9ee] text-gold px-4 py-1.5 rounded-full text-xs font-bold flex items-center gap-2 border border-gold/20">
+                        <Clock size={14} /> In 3 Days
+                    </span>
+                </div>
+
+                <div className="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+                    {/* Image Side */}
+                    <div className="md:w-5/12 relative min-h-[300px]">
+                        <img
+                            src="/images/community/img3.jpg"
+                            alt="Roundtable"
+                            className="w-full h-full object-cover absolute inset-0"
+                        />
+                    </div>
+
+                    {/* Content Side */}
+                    <div className="md:w-7/12 p-10 flex flex-col justify-center">
+                        <div className="flex justify-between items-start mb-4">
+                            <span className="text-[#2ecc71] font-bold text-xs tracking-widest uppercase">Featured Event</span>
+                            <Star size={20} className="text-gold fill-gold" />
+                        </div>
+
+                        <h3 className="text-3xl md:text-4xl font-bold text-[#051910] mb-4">Q3 Founder's Roundtable</h3>
+
+                        <p className="text-gray-500 mb-8 leading-relaxed">
+                            Join us for an exclusive evening discussing scaling strategies with industry leaders. Open Q&A session followed by structured networking.
+                        </p>
+
+                        <div className="space-y-4 mb-10">
+                            <div className="flex items-center gap-3 text-gray-700">
+                                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gold">
+                                    <Calendar size={18} />
+                                </div>
+                                <span className="font-medium">Oct 24th, 6:00 PM EST</span>
+                            </div>
+                            <div className="flex items-center gap-3 text-gray-700">
+                                <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gold">
+                                    <MapPin size={18} />
+                                </div>
+                                <span className="font-medium">The Hive, Downtown & Virtual</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button className="bg-[#2ecc71] text-[#051910] px-8 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors w-full md:w-auto text-center">
+                                Reserve Your Spot &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default FeaturedEvent;

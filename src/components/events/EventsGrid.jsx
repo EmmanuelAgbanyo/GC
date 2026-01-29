@@ -1,0 +1,94 @@
+import React from 'react';
+import { Clock, MapPin, Grid, List } from 'lucide-react';
+
+const EventsGrid = () => {
+    const events = [
+        {
+            date: { day: "02", month: "NOV" },
+            type: "Workshop",
+            title: "Financial Wellness for Creators",
+            time: "2:00 PM - 4:00 PM EST",
+            location: "Virtual Event",
+            image: "/images/community/img1.jpg",
+            action: "Register"
+        },
+        {
+            date: { day: "15", month: "NOV" },
+            type: "Networking",
+            title: "Morning Coffee Connection",
+            time: "8:00 AM - 9:30 AM EST",
+            location: "Roast Coffee, Main St.",
+            image: "/images/community/img5.jpg",
+            action: "RSVP"
+        },
+        {
+            date: { day: "05", month: "DEC" },
+            type: "Masterclass",
+            title: "Goal Setting for 2024",
+            time: "6:00 PM - 8:00 PM EST",
+            location: "The Hive",
+            image: "/images/community/img4.jpg",
+            action: "Register"
+        }
+    ];
+
+    return (
+        <section className="pb-24 px-6 bg-white">
+            <div className="max-w-6xl mx-auto">
+                <div className="flex justify-between items-center mb-10">
+                    <h2 className="text-3xl font-bold text-[#051910]">Upcoming Events</h2>
+                    <a href="#" className="text-[#2ecc71] font-bold hover:underline flex items-center gap-2 text-sm">
+                        View Calendar <Grid size={16} />
+                    </a>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                    {events.map((event, index) => (
+                        <div key={index} className="group bg-white rounded-xl border border-gray-100 hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+                            {/* Image Header */}
+                            <div className="h-48 relative">
+                                <img src={event.image} alt={event.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <div className="absolute top-4 left-4 bg-white rounded-lg p-2 text-center min-w-[50px] shadow-md">
+                                    <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">{event.date.month}</div>
+                                    <div className="text-xl font-bold text-[#051910]">{event.date.day}</div>
+                                </div>
+                            </div>
+
+                            {/* Content */}
+                            <div className="p-6 flex-1 flex flex-col">
+                                <span className={`text-xs font-bold uppercase tracking-widest mb-3 inline-block
+                                    ${event.type === 'Workshop' ? 'text-[#2ecc71]' :
+                                        event.type === 'Networking' ? 'text-gold' : 'text-teal-500'}`
+                                }>
+                                    {event.type}
+                                </span>
+
+                                <h3 className="font-bold text-xl text-[#051910] mb-4 flex-1">{event.title}</h3>
+
+                                <div className="space-y-2 mb-6">
+                                    <div className="flex items-center gap-2 text-gray-500 text-xs">
+                                        <Clock size={14} />
+                                        <span>{event.time}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-gray-500 text-xs">
+                                        <MapPin size={14} />
+                                        <span>{event.location}</span>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <span className="text-gray-400 text-sm">{event.location.includes('Virtual') ? 'Online' : 'In-Person'}</span>
+                                    <button className="text-[#2ecc71] font-bold text-sm hover:text-[#27ae60] uppercase tracking-wide">
+                                        {event.action}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default EventsGrid;

@@ -10,7 +10,7 @@ const Hero = () => {
                     alt="The Growth Circle Community"
                     className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-forest-green/60"></div>
+                <div className="absolute inset-0 bg-forest-green/30"></div>
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">

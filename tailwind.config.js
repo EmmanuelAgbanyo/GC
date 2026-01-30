@@ -7,10 +7,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                'forest-green': '#0a2e21',
+                'forest-green': '#1a4d3e', // Reverted to dark/readable green for text
+                'brand-green': '#2ecc71', // Bright/Neon green for accents/buttons
+                'forest-dark': '#051910',
                 'forest-light': '#144130',
-                'gold': '#d4af37',
-                'gold-hover': '#b5952f',
+                'gold': '#D4AF37',
+                'gold-light': '#F1C40F',
+                'gold-dark': '#B7950B',
+                'gold-hover': '#C79F2D',
                 'text-light': '#f5f5f5',
                 'text-muted': '#cbd5e1',
             },

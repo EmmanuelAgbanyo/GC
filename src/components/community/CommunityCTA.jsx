@@ -15,7 +15,7 @@ const CommunityCTA = () => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#" className="bg-[#2ecc71] text-[#051910] px-10 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors shadow-lg shadow-[#2ecc71]/30">
+                    <a href="https://chat.whatsapp.com/IiEYrl55uAcFCQXwBXehg6" target="_blank" rel="noopener noreferrer" className="bg-[#2ecc71] text-[#051910] px-10 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors shadow-lg shadow-[#2ecc71]/30">
                         Become a Member
                     </a>
                     <a href="#" className="bg-transparent border border-white/20 text-white px-10 py-3 rounded-md font-bold hover:bg-white/10 transition-colors">

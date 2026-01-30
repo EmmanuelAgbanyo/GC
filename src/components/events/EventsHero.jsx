@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const EventsHero = () => {
     return (
@@ -26,9 +27,9 @@ const EventsHero = () => {
                     <button className="bg-[#2ecc71] text-[#051910] px-8 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors">
                         View Upcoming Events
                     </button>
-                    <button className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-md font-bold hover:bg-white/10 transition-colors">
+                    <Link to="/gallery" className="bg-transparent border border-white/30 text-white px-8 py-3 rounded-md font-bold hover:bg-white/10 transition-colors inline-block text-center">
                         View Past Highlights
-                    </button>
+                    </Link>
                 </div>
             </div>
         </section>

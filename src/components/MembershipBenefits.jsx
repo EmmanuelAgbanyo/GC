@@ -34,7 +34,7 @@ const MembershipBenefits = () => {
                     <p className="text-white/60 mb-8">
                         Unlock exclusive benefits designed to accelerate your personal and professional development every step of the way.
                     </p>
-                    <a href="#" className="bg-gold text-forest-green px-8 py-3 font-bold hover:bg-gold-hover transition-colors inline-block rounded-sm">
+                    <a href="https://chat.whatsapp.com/IiEYrl55uAcFCQXwBXehg6" target="_blank" rel="noopener noreferrer" className="bg-gold text-forest-green px-8 py-3 font-bold hover:bg-gold-hover transition-colors inline-block rounded-sm">
                         View Membership Plans
                     </a>
                 </div>

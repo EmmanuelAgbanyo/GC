@@ -2,47 +2,53 @@ import React, { useState } from 'react';
 import { Search, Linkedin, Link as LinkIcon } from 'lucide-react';
 
 const SpeakerGrid = () => {
-    const [filter, setFilter] = useState('All Years');
+    const [filter, setFilter] = useState('2025');
 
-    const categories = ["All Years", "2024", "2023", "Leadership", "Entrepreneurship", "Tech & Innovation", "Wellness"];
+    const categories = ["2025", "Leadership", "Entrepreneurship", "Tech & Innovation", "Wellness"];
 
     const speakers = [
         {
-            name: "Sarah Jenkins",
-            role: "Chief Strategy Officer, FinTech Global",
-            session: "Scaling With Intention: The 5-Year Roadmap",
-            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop",
-            featured: true
+            name: "Rev. Edward",
+            role: "Guest Speaker",
+            session: "General Session",
+            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"
         },
         {
-            name: "David Okonjo",
-            role: "Founder, The Growth Circle",
-            session: "Building Communities that Last",
+            name: "Mr. Courage Mensah",
+            role: "Guest Speaker",
+            session: "General Session",
             image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2670&auto=format&fit=crop"
         },
         {
-            name: "Michael Chen",
-            role: "Product Lead, InnovateX",
-            session: "Product Thinking for Career Growth",
+            name: "Mr. Solomon Owusu",
+            role: "Guest Speaker",
+            session: "General Session",
+            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
+        },
+        {
+            name: "Mr. James Kliffin",
+            role: "Guest Speaker",
+            session: "General Session",
             image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2587&auto=format&fit=crop"
         },
         {
-            name: "Amara Diop",
-            role: "Executive Coach & Author",
-            session: "Breaking the Glass Ceiling: Authentic Leadership",
-            image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=2574&auto=format&fit=crop"
-        },
-        {
-            name: "Marcus Johnson",
-            role: "Director of Marketing, BrandCorp",
-            session: "Storytelling for Business Impact",
+            name: "Mr. Philip O. Agyemeng",
+            role: "Guest Speaker",
+            session: "General Session",
             image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
         },
         {
-            name: "Elena Rodriguez",
-            role: "VP of People, Synergy Systems",
-            session: "Navigating Career Transitions",
-            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
+            name: "Emmanuel Agbanyo",
+            role: "Resource Person",
+            session: "General Session",
+            image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop",
+            featured: true
+        },
+        {
+            name: "Josephina Otabil",
+            role: "Resource Person",
+            session: "General Session",
+            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2576&auto=format&fit=crop"
         }
     ];
 
@@ -58,8 +64,8 @@ const SpeakerGrid = () => {
                                     key={index}
                                     onClick={() => setFilter(cat)}
                                     className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${filter === cat
-                                            ? 'bg-[#2ecc71] text-white shadow-md'
-                                            : 'bg-white border border-gray-200 text-gray-600 hover:border-[#2ecc71] hover:text-[#2ecc71]'
+                                        ? 'bg-[#2ecc71] text-white shadow-md'
+                                        : 'bg-white border border-gray-200 text-gray-600 hover:border-[#2ecc71] hover:text-[#2ecc71]'
                                         }`}
                                 >
                                     {cat}

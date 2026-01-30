@@ -3,15 +3,12 @@ import { Twitter, Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-forest-green text-white pt-20 pb-10 px-6 border-t border-white/5">
+        <footer className="bg-[#0a2e21] text-white pt-20 pb-10 px-6 border-t border-white/5">
             <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
 
                 <div className="md:col-span-1">
                     <div className="flex items-center gap-2 mb-6">
-                        <div className="w-6 h-6 bg-gold rotate-45 flex items-center justify-center">
-                            <div className="w-3 h-3 bg-forest-green"></div>
-                        </div>
-                        <span className="text-lg font-bold tracking-tight text-white">The Growth Circle</span>
+                        <img src="/logo.png" alt="The Growth Circle" className="h-10 w-auto object-contain brightness-0 invert" />
                     </div>
                     <p className="text-white/60 text-xs leading-relaxed max-w-xs">
                         Fostering intentional growth through personal connection, mentorship, and accountability for the modern professional.
@@ -21,7 +18,7 @@ const Footer = () => {
                 <div>
                     <h4 className="text-gold font-bold text-sm uppercase tracking-wider mb-6">Community</h4>
                     <ul className="space-y-4 text-sm text-white/70">
-                        <li><a href="#" className="hover:text-gold transition-colors">Membership</a></li>
+                        <li><a href="https://chat.whatsapp.com/IiEYrl55uAcFCQXwBXehg6" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">Membership</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">Events</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">Code of Conduct</a></li>
                         <li><a href="#" className="hover:text-gold transition-colors">Members</a></li>

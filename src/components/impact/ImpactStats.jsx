@@ -3,10 +3,10 @@ import { Users, Clock, Calendar, Mic2 } from 'lucide-react';
 
 const ImpactStats = () => {
     const stats = [
-        { icon: <Mic2 size={24} className="text-[#2ecc71]" />, value: "50+", label: "Guest Speakers" },
-        { icon: <Calendar size={24} className="text-[#2ecc71]" />, value: "75+", label: "Sessions Delivered" },
-        { icon: <Clock size={24} className="text-[#2ecc71]" />, value: "120+", label: "Hours of Content" },
-        { icon: <Users size={24} className="text-[#2ecc71]" />, value: "1.5k+", label: "Community Members" },
+        { icon: <Mic2 size={24} className="text-[#2ecc71]" />, value: "100+", label: "Professionals" },
+        { icon: <Calendar size={24} className="text-[#2ecc71]" />, value: "2", label: "Sessions" },
+        { icon: <Clock size={24} className="text-[#2ecc71]" />, value: "2025", label: "Since" },
+        { icon: <Users size={24} className="text-[#2ecc71]" />, value: "86", label: "Members" },
     ];
 
     return (

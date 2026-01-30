@@ -5,26 +5,26 @@ const Events = () => {
     const events = [
         {
             type: "Mixer & Network",
-            title: "Founder's Coffee",
-            description: "Casual networking for early-stage founders to share struggles and wins.",
-            location: "San Francisco, CA",
-            date: "Oct 24",
-            image: "/images/community/img5.jpg"
+            title: "Setting Goals: How To Set Goals That Actually Work In 2026",
+            description: "A Professional and Networking Breakfast Meet-Up with Rev. Edward Agyekum Kufuor.",
+            location: "Pistachio resturant, spintex-Accra",
+            date: "February",
+            image: "/feb-flyer.jpg"
         },
         {
             type: "Talk Series",
-            title: "Growth Tactics Panel",
-            description: "Hear from VPs at top tech companies about sustainable growth strategies.",
-            location: "NYC / Zoom",
-            date: "Oct 29",
+            title: "How To Build Wealth [FAST] In 2026",
+            description: "Discover proven strategies to accelerate your financial growth and build sustainable wealth in the new economy.",
+            location: "Pistachio resturant, spintex-Accra",
+            date: "March",
             image: "/images/community/img3.jpg"
         },
         {
             type: "Master Class",
             title: "Career Pivot Workshop",
             description: "A guided workshop to help you map out your next big career move.",
-            location: "Zoom",
-            date: "Nov 02",
+            location: "Pistachio resturant, spintex-Accra",
+            date: "April",
             image: "/images/community/img2.jpg"
         }
     ];

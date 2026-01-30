@@ -8,6 +8,7 @@ import HallOfImpact from './pages/HallOfImpact';
 import Community from './pages/Community';
 import Events from './pages/Events';
 import Newsletter from './pages/Newsletter';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/community" element={<Community />} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </main>
       <Footer />

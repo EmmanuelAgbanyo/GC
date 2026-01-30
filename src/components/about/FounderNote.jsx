@@ -21,8 +21,8 @@ const FounderNote = () => {
                         <div className="relative mb-16 group">
                             <div className="overflow-hidden rounded-2xl shadow-2xl">
                                 <img
-                                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop"
-                                    alt="Diverse group of professionals collaborating"
+                                    src="/founder.png"
+                                    alt="Mr. James Kliffin"
                                     className="w-full h-auto transform group-hover:scale-105 transition-transform duration-1000"
                                 />
                             </div>
@@ -75,8 +75,8 @@ const FounderNote = () => {
                                 <div className="relative">
                                     <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-md p-1 bg-white">
                                         <img
-                                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2670&auto=format&fit=crop"
-                                            alt="David Chen"
+                                            src="/founder.png"
+                                            alt="Founder"
                                             className="w-full h-full object-cover rounded-full"
                                         />
                                     </div>
@@ -87,7 +87,7 @@ const FounderNote = () => {
 
                                 <div className="flex-1">
                                     <h3 className="font-bold text-forest-green text-xl font-serif">A Note from the Founder</h3>
-                                    <p className="text-gold text-sm font-bold uppercase tracking-wider">David Chen</p>
+                                    <p className="text-gold text-sm font-bold uppercase tracking-wider">Mr. James Kliffin</p>
                                 </div>
                             </div>
 
@@ -99,8 +99,8 @@ const FounderNote = () => {
                             </div>
 
                             <div className="mt-10 pt-8 border-t border-gray-100 flex justify-between items-end">
-                                <div className="font-signature text-forest-green text-4xl">David Chen</div>
-                                <img src="/logo-icon.png" alt="" className="h-8 opacity-20 grayscale" />
+                                <div className="font-signature text-forest-green text-3xl">Mr. James Kliffin</div>
+                                <img src="/logo.png" alt="The Growth Circle" className="h-8 opacity-20 grayscale" />
                             </div>
                         </div>
                     </motion.div>

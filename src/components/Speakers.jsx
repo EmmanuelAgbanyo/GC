@@ -3,24 +3,29 @@ import React from 'react';
 const Speakers = () => {
     const speakers = [
         {
-            name: "Elena Rodriguez",
-            role: "VP of Product",
+            name: "Rev. Edward",
+            role: "Guest Speaker",
             image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"
         },
         {
-            name: "David Chen",
-            role: "Startup Founder",
+            name: "Mr. Courage Mensah",
+            role: "Guest Speaker",
             image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2670&auto=format&fit=crop"
         },
         {
-            name: "Sarah Jenkins",
-            role: "Leadership Coach",
+            name: "Mr. Solomon Owusu",
+            role: "Guest Speaker",
             image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
         },
         {
-            name: "Marcus Johnson",
-            role: "Angel Investor",
+            name: "Mr. James Kiliffin",
+            role: "Guest Speaker",
             image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2587&auto=format&fit=crop"
+        },
+        {
+            name: "Mr. Philip O. Agyemeng",
+            role: "Guest Speaker",
+            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
         }
     ];
 

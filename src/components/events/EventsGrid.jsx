@@ -4,29 +4,29 @@ import { Clock, MapPin, Grid, List } from 'lucide-react';
 const EventsGrid = () => {
     const events = [
         {
-            date: { day: "02", month: "NOV" },
+            date: { day: "", month: "FEB" },
             type: "Workshop",
-            title: "Financial Wellness for Creators",
-            time: "2:00 PM - 4:00 PM EST",
-            location: "Virtual Event",
-            image: "/images/community/img1.jpg",
+            title: "Setting Goals: How To Set Goals That Actually Work In 2026",
+            time: "9:30 AM - 12:00 PM",
+            location: "Pistachio resturant, spintex-Accra",
+            image: "/feb-flyer.jpg",
             action: "Register"
         },
         {
-            date: { day: "15", month: "NOV" },
+            date: { day: "", month: "MAR" },
             type: "Networking",
-            title: "Morning Coffee Connection",
-            time: "8:00 AM - 9:30 AM EST",
-            location: "Roast Coffee, Main St.",
+            title: "How To Build Wealth [FAST] In 2026",
+            time: "8:00 AM - 9:30 AM",
+            location: "Pistachio resturant, spintex-Accra",
             image: "/images/community/img5.jpg",
             action: "RSVP"
         },
         {
-            date: { day: "05", month: "DEC" },
+            date: { day: "", month: "APR" },
             type: "Masterclass",
-            title: "Goal Setting for 2024",
-            time: "6:00 PM - 8:00 PM EST",
-            location: "The Hive",
+            title: "Goal Setting for 2026",
+            time: "6:00 PM - 8:00 PM",
+            location: "Pistachio resturant, spintex-Accra",
             image: "/images/community/img4.jpg",
             action: "Register"
         }
@@ -48,9 +48,8 @@ const EventsGrid = () => {
                             {/* Image Header */}
                             <div className="h-48 relative">
                                 <img src={event.image} alt={event.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                                <div className="absolute top-4 left-4 bg-white rounded-lg p-2 text-center min-w-[50px] shadow-md">
-                                    <div className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">{event.date.month}</div>
-                                    <div className="text-xl font-bold text-[#051910]">{event.date.day}</div>
+                                <div className="absolute top-4 left-4 bg-white rounded-lg p-2 text-center min-w-[50px] shadow-md flex items-center justify-center h-[50px]">
+                                    <div className="text-sm font-bold text-[#051910] uppercase tracking-wider">{event.date.month}</div>
                                 </div>
                             </div>
 

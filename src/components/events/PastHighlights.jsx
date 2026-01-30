@@ -5,11 +5,17 @@ const PastHighlights = () => {
     return (
         <section className="py-24 px-6 bg-gray-50">
             <div className="max-w-6xl mx-auto">
-                <div className="mb-12">
-                    <h2 className="text-3xl font-bold text-[#051910] mb-2">Past Highlights</h2>
-                    <p className="text-gray-500 max-w-2xl">
-                        See what we've been up to. Our community is built on shared experiences and actionable takeaways.
-                    </p>
+                <div className="mb-12 flex justify-between items-end">
+                    <div>
+                        <h2 className="text-3xl font-bold text-[#051910] mb-2">Past Highlights</h2>
+                        <p className="text-gray-500 max-w-2xl">
+                            See what we've been up to. Our community is built on shared experiences and actionable takeaways.
+                        </p>
+                    </div>
+                    <a href="/gallery" className="hidden md:flex items-center gap-2 text-forest-green font-bold hover:text-gold transition-colors">
+                        View Full Gallery
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                    </a>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
@@ -72,6 +78,13 @@ const PastHighlights = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="mt-8 md:hidden text-center">
+                    <a href="/gallery" className="inline-flex items-center gap-2 text-forest-green font-bold hover:text-gold transition-colors">
+                        View Full Gallery
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                    </a>
                 </div>
             </div>
         </section>

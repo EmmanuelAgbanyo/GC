@@ -15,7 +15,7 @@ const Speakers = () => {
         {
             name: "Mr. Solomon Owusu",
             role: "Guest Speaker",
-            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
+            image: "/images/speakers/solomon-owusu.png"
         },
         {
             name: "Mr. James Kliffin",

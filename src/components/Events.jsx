@@ -34,10 +34,10 @@ const Events = () => {
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-end mb-12">
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-forest-green mb-2">Upcoming Events</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-forest-dark mb-2">Upcoming Events</h2>
                         <p className="text-gray-500">Join us in-person or online.</p>
                     </div>
-                    <a href="#" className="flex items-center gap-2 text-forest-green font-bold text-sm hover:text-gold transition-colors">
+                    <a href="#" className="flex items-center gap-2 text-brand-green font-bold text-sm hover:text-gold transition-colors">
                         View all events <ArrowRight size={16} />
                     </a>
                 </div>
@@ -51,20 +51,20 @@ const Events = () => {
                                     alt={event.title}
                                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                                 />
-                                <div className="absolute top-4 left-4 bg-forest-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                <div className="absolute top-4 left-4 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                                     {event.type}
                                 </div>
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-bold text-forest-green mb-3">{event.title}</h3>
+                                <h3 className="text-xl font-bold text-forest-dark mb-3">{event.title}</h3>
                                 <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-2">
                                     {event.description}
                                 </p>
                                 <div className="flex justify-between items-center pt-4 border-t border-gray-100">
                                     <div className="flex items-center gap-1 text-gray-500 text-xs">
-                                        <span className="font-medium text-forest-green">{event.location}</span>
+                                        <span className="font-medium text-brand-green">{event.location}</span>
                                     </div>
-                                    <div className="flex items-center gap-1 font-bold text-forest-green text-sm">
+                                    <div className="flex items-center gap-1 font-bold text-brand-green text-sm">
                                         {event.date} <ArrowRight size={14} />
                                     </div>
                                 </div>

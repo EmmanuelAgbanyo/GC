@@ -25,11 +25,11 @@ const FeaturedEvent = () => {
                     {/* Content Side */}
                     <div className="md:w-7/12 p-10 flex flex-col justify-center">
                         <div className="flex justify-between items-start mb-4">
-                            <span className="text-[#2ecc71] font-bold text-xs tracking-widest uppercase">Featured Event</span>
+                            <span className="text-brand-green font-bold text-xs tracking-widest uppercase">Featured Event</span>
                             <Star size={20} className="text-gold fill-gold" />
                         </div>
 
-                        <h3 className="text-3xl md:text-3xl font-bold text-[#051910] mb-4">Setting Goals: How To Set Goals That Actually Work In 2026</h3>
+                        <h3 className="text-3xl md:text-3xl font-bold text-forest-dark mb-4">Setting Goals: How To Set Goals That Actually Work In 2026</h3>
 
                         <p className="text-gray-500 mb-8 leading-relaxed">
                             A Professional and Networking Breakfast Meet-Up with Rev. Edward Agyekum Kufuor. Learn why your goals failed in 2025 and how to make them work in 2026.
@@ -57,7 +57,7 @@ const FeaturedEvent = () => {
                         </div>
 
                         <div>
-                            <button className="bg-[#2ecc71] text-[#051910] px-8 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors w-full md:w-auto text-center">
+                            <button className="bg-brand-green text-forest-dark px-8 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors w-full md:w-auto text-center">
                                 Register Now &rarr;
                             </button>
                         </div>

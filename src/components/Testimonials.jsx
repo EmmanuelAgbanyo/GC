@@ -17,14 +17,14 @@ const Testimonials = () => {
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
                                 <img
-                                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2564&auto=format&fit=crop"
-                                    alt="Member"
+                                    src="/images/speakers/courage-mensah.jpg"
+                                    alt="Mr. Courage Mensah"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
                             <div>
-                                <h4 className="font-bold text-forest-green text-sm">Tanya K.</h4>
-                                <p className="text-gold text-xs font-bold uppercase">Creative Director</p>
+                                <h4 className="font-bold text-forest-green text-sm">Mr. Courage Mensah</h4>
+                                <p className="text-gold text-xs font-bold uppercase">Entrepreneur</p>
                             </div>
                         </div>
                     </div>
@@ -38,14 +38,14 @@ const Testimonials = () => {
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
                                 <img
-                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop"
-                                    alt="Member"
+                                    src="/images/speakers/james-kliffin.png"
+                                    alt="Mr. James Kliffin"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
                             <div>
-                                <h4 className="font-bold text-forest-green text-sm">James T.</h4>
-                                <p className="text-gold text-xs font-bold uppercase">Software Engineer</p>
+                                <h4 className="font-bold text-forest-green text-sm">Mr. James Kliffin</h4>
+                                <p className="text-gold text-xs font-bold uppercase">Co-Founder & CEO</p>
                             </div>
                         </div>
                     </div>

@@ -23,7 +23,7 @@ const PastHighlights = () => {
                     <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                         <div className="h-64 overflow-hidden relative">
                             <img
-                                src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?q=80&w=2070&auto=format&fit=crop"
+                                src="/images/gallery/gallery1.jpg"
                                 alt="Mixer"
                                 className="w-full h-full object-cover"
                             />
@@ -32,7 +32,7 @@ const PastHighlights = () => {
                             </div>
                         </div>
                         <div className="p-8">
-                            <h3 className="text-2xl font-bold text-[#051910] mb-3">Summer Networking Mixer</h3>
+                            <h3 className="text-2xl font-bold text-forest-dark mb-3">Summer Networking Mixer</h3>
                             <p className="text-gray-500 mb-6 leading-relaxed">
                                 Over 100 professionals gathered to break bread and barriers. We facilitated 50+ new mentorship connections in a single evening.
                             </p>
@@ -41,7 +41,7 @@ const PastHighlights = () => {
                                 <Lightbulb size={24} className="text-gold shrink-0 mt-1" />
                                 <div>
                                     <span className="text-gold text-xs font-bold tracking-widest uppercase block mb-1">Key Takeaway</span>
-                                    <p className="text-[#051910] text-sm italic font-medium max-w-xs">
+                                    <p className="text-forest-dark text-sm italic font-medium max-w-xs">
                                         "Your network is your net worth only if you actively invest in it."
                                     </p>
                                 </div>
@@ -53,7 +53,7 @@ const PastHighlights = () => {
                     <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                         <div className="h-64 overflow-hidden relative">
                             <img
-                                src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop"
+                                src="/images/gallery/gallery4.jpg"
                                 alt="AI Talk"
                                 className="w-full h-full object-cover"
                             />

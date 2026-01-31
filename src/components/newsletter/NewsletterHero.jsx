@@ -12,9 +12,9 @@ const NewsletterHero = () => {
                         <Zap size={14} className="fill-gold" /> Weekly Wisdom
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold text-[#051910] mb-6 leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-bold text-forest-dark mb-6 leading-tight">
                         Fuel Your <br />
-                        <span className="text-[#2ecc71]">Growth Journey</span>
+                        <span className="text-brand-green">Growth Journey</span>
                     </h1>
 
                     <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-lg">
@@ -27,24 +27,24 @@ const NewsletterHero = () => {
                             <input
                                 type="email"
                                 placeholder="Enter your email address"
-                                className="w-full bg-transparent focus:outline-none text-[#051910] placeholder:text-gray-400"
+                                className="w-full bg-transparent focus:outline-none text-forest-dark placeholder:text-gray-400"
                             />
                         </div>
-                        <button className="bg-[#2ecc71] text-[#051910] px-6 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors whitespace-nowrap shadow-md shadow-[#2ecc71]/20">
+                        <button className="bg-brand-green text-forest-dark px-6 py-3 rounded-md font-bold hover:bg-[#27ae60] transition-colors whitespace-nowrap shadow-md shadow-brand-green/20">
                             Subscribe Free
                         </button>
                     </div>
 
-                    <p className="text-xs text-gray-400 mb-10 pl-2">Join 5,000+ professionals. Unsubscribe at any time.</p>
+                    <p className="text-xs text-gray-400 mb-10 pl-2">Join 100+ professionals. Unsubscribe at any time.</p>
 
                     <div className="flex items-center gap-4">
                         <div className="flex -space-x-3">
-                            {[1, 2, 3].map((i) => (
+                            {[1, 5, 6].map((i) => (
                                 <img
                                     key={i}
-                                    src={`https://randomuser.me/api/portraits/women/${i + 40}.jpg`}
+                                    src={`/images/gallery/gallery${i}.jpg`}
                                     alt="User"
-                                    className="w-10 h-10 rounded-full border-2 border-white"
+                                    className="w-10 h-10 rounded-full border-2 border-white object-cover"
                                 />
                             ))}
                         </div>
@@ -56,7 +56,7 @@ const NewsletterHero = () => {
                                 <Star size={12} className="fill-gold" />
                                 <Star size={12} className="fill-gold" />
                             </div>
-                            <span className="text-xs font-bold text-[#051910]">Trusted by community leaders</span>
+                            <span className="text-xs font-bold text-forest-dark">Trusted by community leaders</span>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const NewsletterHero = () => {
                 <div className="lg:w-1/2 relative">
                     <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                         <img
-                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+                            src="/images/newsletter/header.jpg"
                             alt="Community working together"
                             className="w-full h-auto object-cover"
                         />
@@ -73,13 +73,13 @@ const NewsletterHero = () => {
 
                         {/* Floating Card */}
                         <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-white/50 flex items-center gap-4 animate-fade-in-up">
-                            <div className="w-12 h-12 bg-[#2ecc71]/10 rounded-full flex items-center justify-center text-[#2ecc71]">
+                            <div className="w-12 h-12 bg-brand-green/10 rounded-full flex items-center justify-center text-brand-green">
                                 <TrendingUp size={24} />
                             </div>
                             <div>
                                 <span className="text-xs font-bold text-gray-400 uppercase tracking-wide">Latest Issue</span>
-                                <h3 className="text-[#051910] font-bold">"The Art of the Pivot"</h3>
-                                <p className="text-xs text-gray-500">Read by 12,400+ members this week.</p>
+                                <h3 className="text-forest-dark font-bold">"Connection vs Skills"</h3>
+                                <p className="text-xs text-gray-500">Discussed by members last meetup.</p>
                             </div>
                         </div>
                     </div>

@@ -3,14 +3,32 @@ import { Search, Linkedin, CheckCircle } from 'lucide-react';
 
 const MemberDirectory = () => {
     const members = [
-        { name: "Sarah Jenkins", role: "Product Director at TechFlow", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2574&auto=format&fit=crop" },
-        { name: "David Miller", role: "Founder & CEO, EarthFirst", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2574&auto=format&fit=crop" },
-        { name: "Emily Chen", role: "Marketing Strategist", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop" },
-        { name: "Marcus Johnson", role: "Freelance UX Designer", image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2587&auto=format&fit=crop" },
-        { name: "Olivia Diaz", role: "VP of Sales at Horizon", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=2864&auto=format&fit=crop" },
-        { name: "Daniel Lee", role: "Architect & Urban Planner", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2574&auto=format&fit=crop" },
-        { name: "Sophia Amari", role: "Digital Creator", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=2670&auto=format&fit=crop" },
-        { name: "Thomas Wright", role: "Investment Banker", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop" }
+        {
+            name: "Rev. Edward Agyekum Kufuor",
+            role: "Guest Speaker",
+            image: "/images/speakers/rev-edward.png"
+        },
+        {
+            name: "Mr. Courage Mensah",
+            role: "Entrepreneur & Speaker",
+            image: "/images/speakers/courage-mensah.jpg"
+        },
+        {
+            name: "Mr. James Kliffin",
+            role: "Co-Founder & CEO",
+            image: "/images/speakers/james-kliffin.png",
+            linkedin: "https://www.linkedin.com/in/jameskiliffin/"
+        },
+        {
+            name: "Mr. Solomon Owusu",
+            role: "Guest Speaker",
+            image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
+        },
+        {
+            name: "Mr. Philip O. Agyemeng",
+            role: "Guest Speaker",
+            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
+        }
     ];
 
     return (

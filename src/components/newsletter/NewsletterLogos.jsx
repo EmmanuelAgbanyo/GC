@@ -8,21 +8,30 @@ const NewsletterLogos = () => {
                 Professionals from top companies are already here
             </p>
 
-            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-                <div className="flex items-center gap-2 font-bold text-xl text-[#051910]">
-                    <Hexagon size={28} className="fill-current" /> ACME Corp
+            <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Hexagon size={24} className="fill-current" /> SEC Ghana
                 </div>
-                <div className="flex items-center gap-2 font-bold text-xl text-[#051910]">
-                    <Globe size={28} /> GlobalTech
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Globe size={24} /> Promasidor
                 </div>
-                <div className="flex items-center gap-2 font-bold text-xl text-[#051910]">
-                    <Box size={28} className="fill-current" /> Nebula
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Box size={24} className="fill-current" /> GCB Bank
                 </div>
-                <div className="flex items-center gap-2 font-bold text-xl text-[#051910]">
-                    <Circle size={28} /> Circle.io
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Circle size={24} /> Young Investors Network
                 </div>
-                <div className="flex items-center gap-2 font-bold text-xl text-[#051910]">
-                    <Triangle size={28} className="fill-current" /> FoxRun
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Triangle size={24} className="fill-current" /> MTN Ghana
+                </div>
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Hexagon size={24} /> Ecobank
+                </div>
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Globe size={24} className="fill-current" /> Enterprise Group
+                </div>
+                <div className="flex items-center gap-2 font-bold text-lg md:text-xl text-forest-dark">
+                    <Box size={24} /> GOIL
                 </div>
             </div>
         </section>

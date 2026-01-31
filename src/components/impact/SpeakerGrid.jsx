@@ -8,16 +8,16 @@ const SpeakerGrid = () => {
 
     const speakers = [
         {
-            name: "Rev. Edward",
+            name: "Rev. Edward Agyekum Kufuor",
             role: "Guest Speaker",
             session: "General Session",
-            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"
+            image: "/images/speakers/rev-edward.png"
         },
         {
             name: "Mr. Courage Mensah",
             role: "Guest Speaker",
             session: "General Session",
-            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2670&auto=format&fit=crop"
+            image: "/images/speakers/courage-mensah.jpg"
         },
         {
             name: "Mr. Solomon Owusu",
@@ -29,7 +29,8 @@ const SpeakerGrid = () => {
             name: "Mr. James Kliffin",
             role: "Guest Speaker",
             session: "General Session",
-            image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2587&auto=format&fit=crop"
+            image: "/images/speakers/james-kliffin.png",
+            linkedin: "https://www.linkedin.com/in/jameskiliffin/"
         },
         {
             name: "Mr. Philip O. Agyemeng",
@@ -37,19 +38,7 @@ const SpeakerGrid = () => {
             session: "General Session",
             image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
         },
-        {
-            name: "Emmanuel Agbanyo",
-            role: "Resource Person",
-            session: "General Session",
-            image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=2574&auto=format&fit=crop",
-            featured: true
-        },
-        {
-            name: "Josephina Otabil",
-            role: "Resource Person",
-            session: "General Session",
-            image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2576&auto=format&fit=crop"
-        }
+
     ];
 
     return (
@@ -105,9 +94,15 @@ const SpeakerGrid = () => {
                                 <p className="text-sm font-medium text-forest-green leading-snug">{speaker.session}</p>
                             </div>
 
-                            <button className="w-full flex items-center justify-center gap-2 border border-gray-200 py-2.5 rounded-md text-xs font-bold text-gray-600 hover:border-[#0077b5] hover:text-[#0077b5] transition-colors">
-                                <Linkedin size={14} /> Connect on LinkedIn
-                            </button>
+                            <a
+                                href={speaker.linkedin || "#"}
+                                target={speaker.linkedin ? "_blank" : "_self"}
+                                rel="noopener noreferrer"
+                                className={`w-full flex items-center justify-center gap-2 border border-gray-200 py-2.5 rounded-md text-xs font-bold transition-colors ${speaker.linkedin ? 'text-[#0077b5] border-[#0077b5] hover:bg-[#0077b5] hover:text-white' : 'text-gray-400 cursor-not-allowed hover:border-gray-200'}`}
+                                onClick={(e) => !speaker.linkedin && e.preventDefault()}
+                            >
+                                <Linkedin size={14} /> {speaker.linkedin ? "Connect on LinkedIn" : "LinkedIn Not Available"}
+                            </a>
                         </div>
                     ))}
                 </div>

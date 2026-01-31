@@ -3,14 +3,14 @@ import React from 'react';
 const Speakers = () => {
     const speakers = [
         {
-            name: "Rev. Edward",
+            name: "Rev. Edward Agyekum Kufuor",
             role: "Guest Speaker",
-            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2576&auto=format&fit=crop"
+            image: "/images/speakers/rev-edward.png"
         },
         {
             name: "Mr. Courage Mensah",
             role: "Guest Speaker",
-            image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2670&auto=format&fit=crop"
+            image: "/images/speakers/courage-mensah.jpg"
         },
         {
             name: "Mr. Solomon Owusu",
@@ -18,9 +18,9 @@ const Speakers = () => {
             image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
         },
         {
-            name: "Mr. James Kiliffin",
+            name: "Mr. James Kliffin",
             role: "Guest Speaker",
-            image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=2587&auto=format&fit=crop"
+            image: "/images/speakers/james-kliffin.png"
         },
         {
             name: "Mr. Philip O. Agyemeng",

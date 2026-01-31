@@ -4,39 +4,63 @@ import { X, ZoomIn } from 'lucide-react';
 const galleryImages = [
     {
         id: 1,
-        src: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop",
+        src: "/images/gallery/gallery1.jpg",
         category: "Networking",
-        title: "Summer Mixer 2024"
+        title: "Community Meetup"
     },
     {
         id: 2,
-        src: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop",
+        src: "/images/gallery/gallery2.jpg",
         category: "Workshop",
-        title: "Leadership Summit"
+        title: "Knowledge Sharing"
     },
     {
         id: 3,
-        src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+        src: "/images/gallery/gallery3.jpg",
         category: "Team",
-        title: "Community Building"
+        title: "Growth Circle Members"
     },
     {
         id: 4,
-        src: "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop",
-        category: "Panel",
-        title: "Tech Trends 2025"
+        src: "/images/gallery/gallery4.jpg",
+        category: "Social",
+        title: "Networking & Smiles"
     },
     {
         id: 5,
-        src: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop",
-        category: "Social",
-        title: "Annual Gala"
+        src: "/images/gallery/gallery5.jpg",
+        category: "Events",
+        title: "Connecting Minds"
     },
     {
         id: 6,
-        src: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2070&auto=format&fit=crop",
-        category: "Workshop",
-        title: "Startup Bootcamp"
+        src: "/images/gallery/gallery6.jpg",
+        category: "Community",
+        title: "Engaged Conversations"
+    },
+    {
+        id: 7,
+        src: "/images/gallery/gallery7.jpg",
+        category: "Impact",
+        title: "Moments of Reflection"
+    },
+    {
+        id: 8,
+        src: "/images/gallery/gallery8.jpg",
+        category: "Learning",
+        title: "Attentive Audience"
+    },
+    {
+        id: 9,
+        src: "/images/gallery/gallery9.jpg",
+        category: "Social",
+        title: "Good Vibes"
+    },
+    {
+        id: 10,
+        src: "/images/gallery/gallery10.jpg",
+        category: "Networking",
+        title: "Building Bridges"
     }
 ];
 

@@ -9,9 +9,9 @@ const MemberDirectory = () => {
             image: "/images/speakers/rev-edward.png"
         },
         {
-            name: "Mr. Courage Mensah",
+            name: "Mr. Solomon Mensah",
             role: "Entrepreneur & Speaker",
-            image: "/images/speakers/courage-mensah.jpg"
+            image: "/images/speakers/solomon-mensah.png"
         },
         {
             name: "Mr. James Kliffin",

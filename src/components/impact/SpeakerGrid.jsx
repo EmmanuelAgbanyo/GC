@@ -33,10 +33,10 @@ const SpeakerGrid = () => {
             linkedin: "https://www.linkedin.com/in/jameskiliffin/"
         },
         {
-            name: "Mr. Philip O. Agyemeng",
+            name: "Mr. Philip O. Agyemang",
             role: "Guest Speaker",
             session: "General Session",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
+            image: "/images/speakers/philip-agyemang.png"
         },
 
     ];

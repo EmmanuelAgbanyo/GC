@@ -24,17 +24,17 @@ const PastHighlights = () => {
                         <div className="h-64 overflow-hidden relative">
                             <img
                                 src="/images/gallery/gallery1.jpg"
-                                alt="Mixer"
+                                alt="Skills vs Connections"
                                 className="w-full h-full object-cover"
                             />
                             <div className="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md text-white px-3 py-1 rounded text-xs font-bold">
-                                August Mixer
+                                First Meetup
                             </div>
                         </div>
                         <div className="p-8">
-                            <h3 className="text-2xl font-bold text-forest-dark mb-3">Summer Networking Mixer</h3>
+                            <h3 className="text-2xl font-bold text-forest-dark mb-3">First Meetup Meeting - Skills vs Connections</h3>
                             <p className="text-gray-500 mb-6 leading-relaxed">
-                                Over 100 professionals gathered to break bread and barriers. We facilitated 50+ new mentorship connections in a single evening.
+                                Our inaugural meetup tackled the age-old debate: which is more important for success? Members engaged in a lively discussion, sharing personal stories of how both pillars shaped their journeys.
                             </p>
 
                             <div className="bg-[#fff9ee] border border-gold/20 p-5 rounded-lg flex gap-4">
@@ -42,7 +42,7 @@ const PastHighlights = () => {
                                 <div>
                                     <span className="text-gold text-xs font-bold tracking-widest uppercase block mb-1">Key Takeaway</span>
                                     <p className="text-forest-dark text-sm italic font-medium max-w-xs">
-                                        "Your network is your net worth only if you actively invest in it."
+                                        "Skills get you in the room, but connections keep you there. You need both to truly thrive."
                                     </p>
                                 </div>
                             </div>

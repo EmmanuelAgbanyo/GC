@@ -13,7 +13,7 @@ const Speakers = () => {
             image: "/images/speakers/solomon-mensah.png"
         },
         {
-            name: "Mr. Solomon Owusu",
+            name: "Mr. Courage Mensah",
             role: "Guest Speaker",
             image: "/images/speakers/solomon-owusu.png"
         },

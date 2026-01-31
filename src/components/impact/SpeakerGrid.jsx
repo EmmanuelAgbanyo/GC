@@ -20,7 +20,7 @@ const SpeakerGrid = () => {
             image: "/images/speakers/solomon-mensah.png"
         },
         {
-            name: "Mr. Solomon Owusu",
+            name: "Mr. Courage Mensah",
             role: "Guest Speaker",
             session: "General Session",
             image: "/images/speakers/solomon-owusu.png"

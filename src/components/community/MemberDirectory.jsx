@@ -15,7 +15,7 @@ const MemberDirectory = () => {
         },
         {
             name: "Mr. James Kliffin",
-            role: "Co-Founder & CEO",
+            role: "Co-Founder",
             image: "/images/speakers/james-kliffin.png",
             linkedin: "https://www.linkedin.com/in/jameskiliffin/"
         },
@@ -25,9 +25,9 @@ const MemberDirectory = () => {
             image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop"
         },
         {
-            name: "Mr. Philip O. Agyemeng",
-            role: "Guest Speaker",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
+            name: "Mr. Philip O. Agyemang",
+            role: "Co-Founder",
+            image: "/images/speakers/philip-agyemang.png"
         }
     ];
 

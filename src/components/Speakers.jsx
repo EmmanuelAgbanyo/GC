@@ -19,13 +19,13 @@ const Speakers = () => {
         },
         {
             name: "Mr. James Kliffin",
-            role: "Guest Speaker",
+            role: "Co-Founder",
             image: "/images/speakers/james-kliffin.png"
         },
         {
-            name: "Mr. Philip O. Agyemeng",
-            role: "Guest Speaker",
-            image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2574&auto=format&fit=crop"
+            name: "Mr. Philip O. Agyemang",
+            role: "Co-Founder",
+            image: "/images/speakers/philip-agyemang.png"
         }
     ];
 

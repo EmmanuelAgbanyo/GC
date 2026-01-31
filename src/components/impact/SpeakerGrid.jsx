@@ -27,14 +27,14 @@ const SpeakerGrid = () => {
         },
         {
             name: "Mr. James Kliffin",
-            role: "Guest Speaker",
+            role: "Co-Founder",
             session: "General Session",
             image: "/images/speakers/james-kliffin.png",
             linkedin: "https://www.linkedin.com/in/jameskiliffin/"
         },
         {
             name: "Mr. Philip O. Agyemang",
-            role: "Guest Speaker",
+            role: "Co-Founder",
             session: "General Session",
             image: "/images/speakers/philip-agyemang.png"
         },

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Twitter, Linkedin, Instagram } from 'lucide-react';
+import { useCMS } from '../context/CMSContext';
 
 const Footer = () => {
+    const { cmsData } = useCMS();
+    const { footerDescription, socialLinks } = cmsData.settings;
+
     return (
         <footer className="bg-[#0a2e21] text-white pt-20 pb-10 px-6 border-t border-white/5">
             <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
@@ -11,7 +15,7 @@ const Footer = () => {
                         <img src="/logo.png" alt="The Growth Circle" className="h-10 w-auto object-contain brightness-0 invert" />
                     </div>
                     <p className="text-white/60 text-xs leading-relaxed max-w-xs">
-                        Fostering intentional growth through personal connection, mentorship, and accountability for the modern professional.
+                        {footerDescription}
                     </p>
                 </div>
 
@@ -54,9 +58,15 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-white/40">
                 <p>&copy; 2026 The Growth Circle. All rights reserved.</p>
                 <div className="flex gap-6 mt-4 md:mt-0">
-                    <Twitter className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
-                    <Linkedin className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
-                    <Instagram className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                    <a href={socialLinks?.twitter || '#'} target="_blank" rel="noopener noreferrer">
+                        <Twitter className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                    </a>
+                    <a href={socialLinks?.linkedin || '#'} target="_blank" rel="noopener noreferrer">
+                        <Linkedin className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                    </a>
+                    <a href={socialLinks?.instagram || '#'} target="_blank" rel="noopener noreferrer">
+                        <Instagram className="w-4 h-4 hover:text-white transition-colors cursor-pointer" />
+                    </a>
                 </div>
             </div>
         </footer>

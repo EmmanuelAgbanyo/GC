@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useCMS } from '../context/CMSContext';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { cmsData } = useCMS();
+    const whatsappLink = cmsData.settings.whatsappLink;
 
     return (
         <nav className="bg-white py-4 px-6 md:px-12 flex justify-between items-center relative z-50">
@@ -23,8 +26,8 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex items-center gap-4">
-                <a href="https://chat.whatsapp.com/IiEYrl55uAcFCQXwBXehg6" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-brand-green to-[#27ae60] text-white px-6 py-2 font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 rounded-sm">Join the Circle</a>
-                <Link to="#" className="bg-forest-green text-white px-6 py-2 font-bold hover:bg-forest-light transition-colors">Login</Link>
+                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-brand-green to-[#27ae60] text-white px-6 py-2 font-bold hover:shadow-lg hover:scale-105 transition-all duration-300 rounded-sm">Join the Circle</a>
+                <Link to="/admin" className="bg-forest-green text-white px-6 py-2 font-bold hover:bg-forest-light transition-colors">Admin</Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -43,8 +46,8 @@ const Navbar = () => {
                     <Link to="/gallery" className="text-forest-green font-medium" onClick={() => setIsOpen(false)}>Gallery</Link>
                     <Link to="/newsletter" className="text-forest-green font-medium" onClick={() => setIsOpen(false)}>Newsletter</Link>
                     <div className="h-px bg-gray-200 my-2"></div>
-                    <a href="https://chat.whatsapp.com/IiEYrl55uAcFCQXwBXehg6" target="_blank" rel="noopener noreferrer" className="bg-gold text-forest-green px-6 py-3 text-center font-bold" onClick={() => setIsOpen(false)}>Join the Circle</a>
-                    <Link to="#" className="bg-forest-green text-white px-6 py-3 text-center font-bold" onClick={() => setIsOpen(false)}>Login</Link>
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="bg-gold text-forest-green px-6 py-3 text-center font-bold" onClick={() => setIsOpen(false)}>Join the Circle</a>
+                    <Link to="/admin" className="bg-forest-green text-white px-6 py-3 text-center font-bold" onClick={() => setIsOpen(false)}>Admin</Link>
                 </div>
             )}
         </nav>

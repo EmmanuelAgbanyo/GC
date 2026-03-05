@@ -1,33 +1,10 @@
 import React from 'react';
-import { ArrowRight, MapPin } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { useCMS } from '../context/CMSContext';
 
 const Events = () => {
-    const events = [
-        {
-            type: "Mixer & Network",
-            title: "Setting Goals: How To Set Goals That Actually Work In 2026",
-            description: "A Professional and Networking Breakfast Meet-Up with Rev. Edward Agyekum Kufuor.",
-            location: "Pistachio resturant, spintex-Accra",
-            date: "February",
-            image: "/feb-flyer.jpg"
-        },
-        {
-            type: "Talk Series",
-            title: "How To Build Wealth [FAST] In 2026",
-            description: "Discover proven strategies to accelerate your financial growth and build sustainable wealth in the new economy.",
-            location: "Pistachio resturant, spintex-Accra",
-            date: "March",
-            image: "/images/community/img3.jpg"
-        },
-        {
-            type: "Master Class",
-            title: "Career Pivot Workshop",
-            description: "A guided workshop to help you map out your next big career move.",
-            location: "Pistachio resturant, spintex-Accra",
-            date: "April",
-            image: "/images/community/img2.jpg"
-        }
-    ];
+    const { cmsData } = useCMS();
+    const events = cmsData.events;
 
     return (
         <section className="bg-white py-20 px-6">
@@ -43,8 +20,8 @@ const Events = () => {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
-                    {events.map((event, index) => (
-                        <div key={index} className="bg-white rounded-lg overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                    {events.map((event) => (
+                        <div key={event.id} className="bg-white rounded-lg overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                             <div className="relative h-48 overflow-hidden">
                                 <img
                                     src={event.image}

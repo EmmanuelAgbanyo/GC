@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useCMS } from '../context/CMSContext';
 
 const Hero = () => {
-    const images = [
-        "/hero-bg.jpg",
-        "/images/gallery/gallery1.jpg",
-        "/images/gallery/gallery5.jpg",
-        "/images/gallery/gallery6.jpg",
-        "/images/gallery/gallery9.jpg"
-    ];
+    const { cmsData } = useCMS();
+    const { headline, headlineAccent, subtext, ctaPrimary, ctaSecondary, images } = cmsData.hero;
 
     const [currentImage, setCurrentImage] = useState(0);
 
     useEffect(() => {
+        if (!images || images.length === 0) return;
         const interval = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 5000); // Change every 5 seconds
-
+        }, 5000);
         return () => clearInterval(interval);
-    }, []);
+    }, [images]);
 
     return (
         <section className="relative w-full h-[600px] md:h-[700px] bg-gradient-to-br from-forest-dark via-[#0a2e21] to-[#1e8449] flex items-center justify-center text-center px-4 overflow-hidden">
@@ -42,18 +38,18 @@ const Hero = () => {
             <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
                 <div className="glass-panel p-8 md:p-12 rounded-2xl shadow-2xl backdrop-blur-xl border border-white/20 ring-1 ring-gold/20">
                     <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">
-                        Where Growth Meets <br /> <span className="text-gold drops-shadow-sm">Connection</span>
+                        {headline} <br /> <span className="text-gold drops-shadow-sm">{headlineAccent}</span>
                     </h1>
                     <p className="text-white text-sm md:text-lg mb-8 max-w-2xl font-light leading-relaxed drop-shadow-sm">
-                        A purpose-driven community for professionals, creators, and entrepreneurs fostering intentional growth through conversation and accountability
+                        {subtext}
                     </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <a href="https://chat.whatsapp.com/IiEYrl55uAcFCQXwBXehg6" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-brand-green to-[#27ae60] text-white px-8 py-3 font-bold hover:shadow-brand-green/20 hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-sm uppercase tracking-wide">
-                            Join the Circle
+                        <a href={ctaPrimary?.url} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-brand-green to-[#27ae60] text-white px-8 py-3 font-bold hover:shadow-brand-green/20 hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-sm uppercase tracking-wide">
+                            {ctaPrimary?.label}
                         </a>
-                        <a href="/events" className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-3 font-bold hover:bg-white/20 transition-colors rounded-sm uppercase tracking-wide shadow-lg">
-                            Attend a Meetup
+                        <a href={ctaSecondary?.url} className="bg-white/10 backdrop-blur-sm border border-white text-white px-8 py-3 font-bold hover:bg-white/20 transition-colors rounded-sm uppercase tracking-wide shadow-lg">
+                            {ctaSecondary?.label}
                         </a>
                     </div>
                 </div>
